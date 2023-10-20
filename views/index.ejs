@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Express • TodoMVC</title>
+		<link rel="stylesheet" href="/css/base.css">
+		<link rel="stylesheet" href="/css/index.css">
+		<link rel="stylesheet" href="/css/app.css">
+		<script type="module">"src=/js/main.js"</script>
+	</head>
+	<body>
+		<section class="bonsaiapp">
+			<nav class="nav">
+				<ul>
+					<li class="user"><%= user.name || user.username || user.email || user.mailchain_address %></li>
+					<li>
+						<form action="/logout" method="post">
+							<button class="logout" type="submit">Sign out</button>
+						</form>
+					</li>
+				</ul>
+			</nav>
+			<header class="headercon">
+				<h1>bonsai lookup!</h1>
+				<p>Information is Power!  Take a moment & check to See if that Dealer, Employer, Seller, Website, Company/Agency or Job is a Scam </p>
+			</header>
+			<input type="tel" id="number-input" placeholder="Enter phone number 07xxx etc ">
+				<button id="submit-btn">Check</button>
+				<div id="result"></div>
+		<footer class="info">
+			<p>BonSai Scammer Lookup results are aggregated from user reports & verified by Bonsai Cyber Investigators </p>
+			<p>Report scams, scammers, and fraud to Bonsai Cyber Investigators - bonsaicyber.com.</p>
+			<p>For assistance, reach out: digitalClaims@mailchain. This is a blockchain address. <br/>To ensure your privacy, acquire one at mailchain.com for secure communications.</p>
+		</footer>
+	</body>
+</html>
